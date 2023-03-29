@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.cdf162a4.css",
+    "main.js": "/react-gh-pages/static/js/main.1de0d865.js",
+    "static/media/owls.jpg": "/react-gh-pages/static/media/owls.600d17faf7ad80d7f301.jpg",
+    "static/media/golden.jpg": "/react-gh-pages/static/media/golden.390477169f3ff9368150.jpg",
+    "static/media/avada.jpg": "/react-gh-pages/static/media/avada.87a3a3280c5b2ff01ccd.jpg",
+    "static/media/felix.jpg": "/react-gh-pages/static/media/felix.de7621572fd858de47bf.jpg",
+    "static/media/wingardium.jpg": "/react-gh-pages/static/media/wingardium.6616e7f53a77af51550d.jpg",
+    "static/media/phoenix.jpg": "/react-gh-pages/static/media/phoenix.ab9b31453ddc37aef01d.jpg",
+    "static/media/occlumency.jpg": "/react-gh-pages/static/media/occlumency.b883677db40fd8caca6f.jpg",
+    "static/media/expecto.jpg": "/react-gh-pages/static/media/expecto.4450a3988026ce5dc12c.jpg",
+    "static/media/dementors.jpg": "/react-gh-pages/static/media/dementors.e7ed659f35fea84356f1.jpg",
+    "static/media/lumos.jpg": "/react-gh-pages/static/media/lumos.40be1ffd0fa3e708d723.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.cdf162a4.css.map": "/react-gh-pages/static/css/main.cdf162a4.css.map",
+    "main.1de0d865.js.map": "/react-gh-pages/static/js/main.1de0d865.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdf162a4.css",
+    "static/js/main.1de0d865.js"
+  ]
+}

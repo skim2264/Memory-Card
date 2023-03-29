@@ -1,0 +1,2 @@
+*{background-color:#faedcd;margin:0;padding:0}.titleHeader{padding:30px}.gameboardDiv{display:flex;justify-content:center;margin-top:20px}.cardsDiv{grid-gap:10px;display:grid;gap:10px;grid-template-columns:repeat(5,350px)}.scoreboardDiv{position:absolute;right:30px;top:30px}.cardDiv,.image{width:300px}.cardDiv{background-color:#000;border:1px solid #000;border-radius:10px;height:240px;padding:5px}
+/*# sourceMappingURL=main.cdf162a4.css.map*/
