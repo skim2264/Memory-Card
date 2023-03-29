@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #faedcd;
+}
+
+.titleHeader {
+  padding: 30px;
+}
+
 .gameboardDiv {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .cardsDiv {
@@ -11,10 +22,19 @@
 
 .scoreboardDiv {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 30px;
+  right: 30px;
 }
 
 .image {
   width: 300px;
+}
+
+.cardDiv {
+  width: 300px;
+  height: 240px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }
