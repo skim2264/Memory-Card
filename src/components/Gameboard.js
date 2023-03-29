@@ -28,6 +28,31 @@ const Gameboard = () => {
 
     const [currScore, setCurrScore] = useState(0);
     const [highscore, setHighscore] = useState(0);
+    const [shuffled, setShuffled] = useState(false);
+
+    useEffect(() => {
+        if (shuffled) {
+            shuffleImages();
+        }
+        updateHighScore()
+    },[shuffled])
+
+    const clickImage = (e) => {
+        const targetId = e.target.parentElement.id;
+        const index = images.findIndex((item) => item.id === targetId);
+        const image = images[index];
+
+         if (!image.clicked) {
+            setImages(images.map(item => item.id === targetId ? {...item, clicked: true}: item))
+            setCurrScore(currScore+1);
+            setShuffled(true);
+            console.log(image);
+        } else {
+            resetAllClicked();
+            setCurrScore(0);
+            console.log(image);
+        } 
+    };
 
     const shuffleImages = () => {
         let tempArray = [...images];
@@ -36,28 +61,12 @@ const Gameboard = () => {
             let temp = tempArray[i];
             tempArray[i] = tempArray[j];
             tempArray[j] = temp;
-            
         }
         setImages(tempArray);
+        setShuffled(false);
     };
 
-    const clickImage = (e) => {
-        const targetId = e.target.parentElement.id;
-        const index = images.findIndex((item) => item.id === targetId);
-        const image = images[index];
-
-         if (!image.clicked) {
-            setImages(images.map(item => item.id === targetId ? {...item, clicked: true}: item));
-            updateScore();
-            shuffleImages();
-        } else {
-            resetAllClicked();
-            setCurrScore(0);
-        }  
-    };
-
-    const updateScore = () => {
-        setCurrScore(currScore+1);
+    const updateHighScore = () => {
         if (currScore > highscore) {
             setHighscore(currScore);
         }
