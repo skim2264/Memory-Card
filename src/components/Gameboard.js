@@ -35,7 +35,7 @@ const Gameboard = () => {
             shuffleImages();
         }
         updateHighScore()
-    },[shuffled])
+    })
 
     const clickImage = (e) => {
         const targetId = e.target.parentElement.id;
