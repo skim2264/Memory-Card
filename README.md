@@ -1,6 +1,6 @@
 # Memory Game
 
-Harry Potter Themed memory game created with Reacgt through the Odin Project's curriculum.
+Harry Potter Themed memory game created with React through the [Odin Project's](https://www.theodinproject.com/) curriculum.
 
 [Live Demo](http://skim2264.github.io/Memory-Card)
 
