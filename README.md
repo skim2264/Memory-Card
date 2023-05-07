@@ -11,3 +11,12 @@ Harry Potter Themed memory game created with Reacgt through the Odin Project's c
 - CSS
 - HTML
 - React
+
+## Getting started
+
+```
+git clone https://github.com/skim2264/Memory-Card.git
+cd Memory-Card
+npm install
+npm run start
+```
