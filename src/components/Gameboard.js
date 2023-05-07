@@ -42,15 +42,21 @@ const Gameboard = () => {
         const index = images.findIndex((item) => item.id === targetId);
         const image = images[index];
 
+        //if image was not previously clicked, set clicked as true, update currentscore and shuffle cards
          if (!image.clicked) {
             setImages(images.map(item => item.id === targetId ? {...item, clicked: true}: item))
             setCurrScore(currScore+1);
             setShuffled(true);
-            console.log(image);
+            //alert player if they won 
+            if (currScore+1 >= 10) {
+                alert("Congratulations, you have proved your memory skills!");
+                setHighscore(10);
+                resetAllClicked();
+                setCurrScore(0);
+            }
         } else {
             resetAllClicked();
             setCurrScore(0);
-            console.log(image);
         } 
     };
 
